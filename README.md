@@ -22,3 +22,7 @@ This repository is currently under development. To do a development install, dow
 `pip install -e .`
 
 in the repository directory.
+
+This package requires the following:
+  - numpy
+  - matplotlib
