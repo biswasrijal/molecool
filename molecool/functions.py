@@ -27,3 +27,15 @@ def canvas(with_attribution=True):
 if __name__ == "__main__":
     # Do something if this file is invoked on its own
     print(canvas())
+
+def zen(with_attribution=True):
+    quote = """Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested."""
+    
+    if with_attribution:
+      quote += "\n\tTim Peters"
+
+    return quote
