@@ -1,3 +1,6 @@
+import os
+import numpy as np
+import matplotlib.pyplot as plt
 """Provide the primary functions."""
 atomic_weights = {
     'H': 1.00784,
@@ -21,7 +24,7 @@ atom_colors = {
     'Br': '#F4A460',
     'S': 'yellow'
 }
-import numpy as np
+
 
 
 def canvas(with_attribution=True):
