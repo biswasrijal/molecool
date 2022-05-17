@@ -68,3 +68,27 @@ def write_xyz(file_location, symbols, coordinates):
         for i in range(num_atoms):
             f.write('{}\t{}\t{}\t{}\n'.format(symbols[i], 
                                               coordinates[i,0], coordinates[i,1], coordinates[i,2]))
+def calculate_distance(rA, rB):
+    """Calculate the distance between two points.
+
+    Parameters
+    ----------
+    rA, rB : np.ndarray
+        The coordinates of each point.
+
+    Returns
+    -------
+    distance : float
+        The distance between the two points.
+    
+    Examples
+    --------
+    >>> r1 = np.array([0, 0, 0])
+    >>> r2 = np.array([0, 0.1, 0])
+    >>> calculate_distance(r1, r2)
+    0.1
+    """
+    dist_vec = (rA - rB)
+    distance = np.linalg.norm(dist_vec)
+        
+    return distance
